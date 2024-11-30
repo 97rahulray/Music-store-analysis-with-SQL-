@@ -34,7 +34,7 @@ The database contains the following key tables:
    SELECT * 
    FROM employee 
    ORDER BY levels DESC 
-   LIMIT 1;  ```
+   LIMIT 1;  
 
 2. **Countries with Most Invoices**
     Find the countries with the most invoices
