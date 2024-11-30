@@ -1,5 +1,5 @@
 # Music Store Analysis with SQL  
-![Music Logo] [https://github.com/97rahulray/Music-store-analysis-with-SQL-/blob/main/Apple%20Music%20App.png]
+![Music Logo] (https://github.com/97rahulray/Music-store-analysis-with-SQL-/blob/main/Apple%20Music%20App.png)
 
 ## Project Overview  
 This project uses SQL to analyze a music store's database to gain insights into customer behavior, sales trends, and the most popular music tracks, genres, and artists. The analysis helps answer key business questions and supports decision-making for promotional strategies.  
