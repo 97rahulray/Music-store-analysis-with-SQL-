@@ -35,13 +35,42 @@ The database contains the following key tables:
    LIMIT 1;  ```
 
 2. **Countries with Most Invoices**
- Find the countries with the most invoices
+   Find the countries with the most invoices
 ```sql
 SELECT COUNT(*) AS c, billing_country 
 FROM invoice 
 GROUP BY billing_country 
 ORDER BY c DESC;
 ```
+3.  **Top 3 Invoice Totals**
+   Retrieve the top three invoice totals.
+```sql
+SELECT total 
+FROM invoice 
+ORDER BY total DESC 
+LIMIT 3;  
+```
+4.**City with Highest Revenue**
+Find the city with the highest revenue.
+```sql
+SELECT SUM(total) AS invoice_total, billing_city 
+FROM invoice 
+GROUP BY billing_city 
+ORDER BY invoice_total DESC;  
+```
+5.**Best Customer**
+Identify the customer who spent the most money.
+```sql
+SELECT customer.customer_id, customer.first_name, customer.last_name, SUM(invoice.total) AS total 
+FROM customer 
+JOIN invoice ON customer.customer_id = invoice.customer_id 
+GROUP BY customer.customer_id 
+ORDER BY total DESC 
+LIMIT 1;  
+```
+
+
+
 
 
 
