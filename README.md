@@ -1,4 +1,5 @@
 # Music Store Analysis with SQL  
+![Music Logo] []
 
 ## Project Overview  
 This project uses SQL to analyze a music store's database to gain insights into customer behavior, sales trends, and the most popular music tracks, genres, and artists. The analysis helps answer key business questions and supports decision-making for promotional strategies.  
